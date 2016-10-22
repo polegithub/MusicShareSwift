@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MsAddressListTableViewCell" customModule="MusicShare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海浅水湾文化艺术中心" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46Q-Iw-Iom">
+                        <rect key="frame" x="33" y="8" width="279" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="dfo-BG-vCU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13811111111,1451111111..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ote-ns-bq9">
+                        <rect key="frame" x="33" y="76" width="279" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="aU9-G5-EeX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="address_home" translatesAutoresizingMaskIntoConstraints="NO" id="pYz-Eu-bIp">
+                        <rect key="frame" x="8" y="8" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="JJ6-zR-J2F"/>
+                            <constraint firstAttribute="height" constant="20" id="vaK-IU-ziK"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="address_map" translatesAutoresizingMaskIntoConstraints="NO" id="06f-tY-dHv">
+                        <rect key="frame" x="8" y="31" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="6UX-Px-cHy"/>
+                            <constraint firstAttribute="width" constant="20" id="Auq-Yb-ZIb"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="address_phone" translatesAutoresizingMaskIntoConstraints="NO" id="ApW-vO-r0K">
+                        <rect key="frame" x="8" y="76" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="CIh-Pr-Z6W"/>
+                            <constraint firstAttribute="width" constant="20" id="jCL-UD-yh8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="普陀区宜昌路179号（近江宁路）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcl-cq-YjA">
+                        <rect key="frame" x="33" y="31" width="279" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="address_people" translatesAutoresizingMaskIntoConstraints="NO" id="sPY-l2-BoX">
+                        <rect key="frame" x="8" y="54" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Jcz-6s-QEF"/>
+                            <constraint firstAttribute="height" constant="20" id="PNJ-AU-YxS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张先生" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNX-GY-6D0">
+                        <rect key="frame" x="33" y="54" width="279" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="OqD-At-PaW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="ote-ns-bq9" secondAttribute="trailing" id="193-T2-9PC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="aNX-GY-6D0" secondAttribute="bottom" constant="23" id="1f2-oo-KdT"/>
+                    <constraint firstItem="pYz-Eu-bIp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="25X-Pr-kSx"/>
+                    <constraint firstItem="Xcl-cq-YjA" firstAttribute="top" secondItem="46Q-Iw-Iom" secondAttribute="bottom" constant="3" id="5pw-2i-cnV"/>
+                    <constraint firstItem="aNX-GY-6D0" firstAttribute="top" secondItem="Xcl-cq-YjA" secondAttribute="bottom" constant="3" id="6mE-HL-wxR"/>
+                    <constraint firstItem="06f-tY-dHv" firstAttribute="top" secondItem="pYz-Eu-bIp" secondAttribute="bottom" constant="3" id="BAy-yf-5G8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ote-ns-bq9" secondAttribute="bottom" id="Fzw-iy-vXd"/>
+                    <constraint firstItem="ote-ns-bq9" firstAttribute="top" secondItem="Xcl-cq-YjA" secondAttribute="bottom" constant="3" id="HtI-E5-FHz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Xcl-cq-YjA" secondAttribute="trailing" id="LWz-ry-NMg"/>
+                    <constraint firstItem="sPY-l2-BoX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="LaV-pe-He7"/>
+                    <constraint firstItem="pYz-Eu-bIp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="RM0-BW-wff"/>
+                    <constraint firstItem="46Q-Iw-Iom" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="SQT-EM-ppu"/>
+                    <constraint firstItem="ote-ns-bq9" firstAttribute="leading" secondItem="ApW-vO-r0K" secondAttribute="trailing" constant="5" id="aZe-E3-1gX"/>
+                    <constraint firstItem="Xcl-cq-YjA" firstAttribute="leading" secondItem="06f-tY-dHv" secondAttribute="trailing" constant="5" id="ca7-Jw-g1j"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="sPY-l2-BoX" secondAttribute="bottom" constant="22.5" id="eFK-aW-Ecp"/>
+                    <constraint firstItem="ApW-vO-r0K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="gDE-8H-UFJ"/>
+                    <constraint firstItem="46Q-Iw-Iom" firstAttribute="leading" secondItem="pYz-Eu-bIp" secondAttribute="trailing" constant="5" id="gkD-ji-iH3"/>
+                    <constraint firstItem="aNX-GY-6D0" firstAttribute="leading" secondItem="sPY-l2-BoX" secondAttribute="trailing" constant="5" id="iMh-H5-YR0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ApW-vO-r0K" secondAttribute="bottom" id="lS9-2W-P40"/>
+                    <constraint firstItem="06f-tY-dHv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nCr-zP-Qaz"/>
+                    <constraint firstItem="aNX-GY-6D0" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="nCv-qc-VB2"/>
+                    <constraint firstItem="06f-tY-dHv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="nbf-Um-hrk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="46Q-Iw-Iom" secondAttribute="trailing" id="zEw-ad-5kN"/>
+                    <constraint firstItem="06f-tY-dHv" firstAttribute="top" secondItem="pYz-Eu-bIp" secondAttribute="bottom" constant="3" id="zMD-eT-cg3"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="nCr-zP-Qaz"/>
+                        <exclude reference="zMD-eT-cg3"/>
+                        <exclude reference="HtI-E5-FHz"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLocation" destination="Xcl-cq-YjA" id="6gA-6W-TbD"/>
+                <outlet property="addressName" destination="46Q-Iw-Iom" id="8d9-rB-gGa"/>
+                <outlet property="addressPhone" destination="ote-ns-bq9" id="Y8R-Nq-jhR"/>
+                <outlet property="contact" destination="aNX-GY-6D0" id="1SY-lD-2vi"/>
+                <outlet property="mapTopLayout" destination="BAy-yf-5G8" id="pK8-eo-h2h"/>
+                <outlet property="nameHeightLayout" destination="dfo-BG-vCU" id="CiD-yr-EkJ"/>
+            </connections>
+            <point key="canvasLocation" x="-113" y="163"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="address_home" width="24" height="24"/>
+        <image name="address_map" width="24" height="24"/>
+        <image name="address_people" width="32" height="32"/>
+        <image name="address_phone" width="24" height="24"/>
+    </resources>
+</document>

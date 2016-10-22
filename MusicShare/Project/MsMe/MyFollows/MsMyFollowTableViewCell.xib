@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MsMyFollowTableViewCell" customModule="MusicShare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gmD-wQ-o2a" userLabel="photo">
+                        <rect key="frame" x="15" y="8" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="OBU-kF-FQe"/>
+                            <constraint firstAttribute="width" constant="44" id="UJ9-z7-gPK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOA-97-1Ne" userLabel="name">
+                        <rect key="frame" x="68" y="8" width="210" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Zog-Lj-o1v"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jy0-bl-8L9" userLabel="sign label">
+                        <rect key="frame" x="68" y="32" width="210" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="fck-1A-dQf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jy0-bl-8L9" firstAttribute="top" secondItem="OOA-97-1Ne" secondAttribute="bottom" constant="3" id="2Pc-3e-qeO"/>
+                    <constraint firstItem="jy0-bl-8L9" firstAttribute="leading" secondItem="gmD-wQ-o2a" secondAttribute="trailing" constant="9" id="BED-gh-bIT"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="OOA-97-1Ne" secondAttribute="trailing" constant="34" id="Q6G-re-N1g"/>
+                    <constraint firstItem="gmD-wQ-o2a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="QBb-8J-maQ"/>
+                    <constraint firstItem="gmD-wQ-o2a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="ZOE-rh-lGm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jy0-bl-8L9" secondAttribute="trailing" constant="34" id="ZeA-Pu-hmN"/>
+                    <constraint firstItem="OOA-97-1Ne" firstAttribute="leading" secondItem="gmD-wQ-o2a" secondAttribute="trailing" constant="9" id="uvo-cJ-PFq"/>
+                    <constraint firstItem="OOA-97-1Ne" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="xS6-oW-UDQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="psSignLabel" destination="jy0-bl-8L9" id="rhv-hf-CFf"/>
+                <outlet property="userName" destination="OOA-97-1Ne" id="FLe-Pq-zH5"/>
+                <outlet property="userPhoto" destination="gmD-wQ-o2a" id="FTX-sU-5eK"/>
+            </connections>
+            <point key="canvasLocation" x="199" y="191"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MsGoodsMainViewController">
+            <connections>
+                <outlet property="buyBtn" destination="WbY-vd-QBG" id="v00-xq-7rD"/>
+                <outlet property="goodsFeeLabel" destination="i8G-QN-kXT" id="tCk-M5-8RR"/>
+                <outlet property="tableView" destination="VNO-5h-vl7" id="AwU-66-INr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="VNO-5h-vl7">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="pgB-EK-e9q"/>
+                        <outlet property="delegate" destination="-1" id="JbF-4B-9KM"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Voz-ou-5zN" userLabel="底部购物">
+                    <rect key="frame" x="0.0" y="519" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="i8G-QN-kXT">
+                            <rect key="frame" x="16" y="14" width="83" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="0HQ-mb-emN"/>
+                                <constraint firstAttribute="width" constant="83" id="5hc-wh-Xlb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbY-vd-QBG">
+                            <rect key="frame" x="194" y="3" width="109" height="40"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="109" id="Rkh-Qa-IWI"/>
+                                <constraint firstAttribute="height" constant="40" id="ySm-z2-Xes"/>
+                            </constraints>
+                            <state key="normal" title="购买">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="buyAction:" destination="-1" eventType="touchUpInside" id="yXX-ad-1hc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="i8G-QN-kXT" firstAttribute="top" secondItem="Voz-ou-5zN" secondAttribute="top" constant="14" id="B6i-ck-ZcY"/>
+                        <constraint firstAttribute="trailing" secondItem="WbY-vd-QBG" secondAttribute="trailing" constant="17" id="PGV-A0-4RZ"/>
+                        <constraint firstItem="i8G-QN-kXT" firstAttribute="leading" secondItem="Voz-ou-5zN" secondAttribute="leading" constant="16" id="U4I-nT-pbm"/>
+                        <constraint firstAttribute="height" constant="50" id="kuz-Kr-iM2"/>
+                        <constraint firstItem="WbY-vd-QBG" firstAttribute="top" secondItem="Voz-ou-5zN" secondAttribute="top" constant="3" id="xsP-Qa-zI1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Voz-ou-5zN" secondAttribute="trailing" id="BWd-qT-Dua"/>
+                <constraint firstItem="Voz-ou-5zN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="N5j-pq-ESV"/>
+                <constraint firstItem="Voz-ou-5zN" firstAttribute="top" secondItem="VNO-5h-vl7" secondAttribute="bottom" id="YEQ-Jf-h4v"/>
+                <constraint firstItem="VNO-5h-vl7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YZo-ff-XmX"/>
+                <constraint firstAttribute="bottom" secondItem="Voz-ou-5zN" secondAttribute="bottom" constant="-1" id="amr-wL-EiK"/>
+                <constraint firstAttribute="trailing" secondItem="VNO-5h-vl7" secondAttribute="trailing" id="jra-6e-h1m"/>
+                <constraint firstItem="VNO-5h-vl7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sz3-hQ-rbA"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
